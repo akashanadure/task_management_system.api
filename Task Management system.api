@@ -1,0 +1,24 @@
+#1.User registration
+POST /api/register
+         -Request Body:{"Username":"akash_anadure","password":"Akash@12345"}
+         -Response:{"message":"User created successfully","user":{"id":2,"username":"akash_anadure"}}
+#2.User Login
+POST /api/Login
+         -Request Body:{"username":"akash_anadure","password":"Akash@12345"}
+         -Response:{"message":"Login successful","token":"jsonwebtoken"}
+#3. create task
+POST /api/tasks
+         -Request Body:{"title":"New task","description":"New task description","status":"Todo","priority":"High",
+         "due_date":"2024-08-24"}
+         -Response:{"message":"Task created successfully","task":{"id":2,"title","Another task",...}}
+#4. Get tasks
+GET /api/tasks
+         -Response:[{"id":1,"title":"New task",...},{"id":2,"title":"Another task",...}]
+#5. Update task
+PUT /api/tasks/{taskId}
+         -Request Body:{"title":"Updated task","description":"Updated description","status":"In progress",
+         "priority":"Medium"}
+         -Response:{"message":"Task updated successfully","task":{"id":1,"title":"Updated task",...}}
+#6. Delete task
+DELETE /api/tasks/{taskId}
+         -Response:{"message":"Task is deleted successfully"}
