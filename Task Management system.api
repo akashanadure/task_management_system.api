@@ -10,7 +10,7 @@ POST /api/Login
 POST /api/tasks
          -Request Body:{"title":"New task","description":"New task description","status":"Todo","priority":"High",
          "due_date":"2024-08-24"}
-         -Response:{"message":"Task created successfully","task":{"id":2,"title","Another task",...}}
+         -Response:{"message":"Task created successfully","task":{"id":2,"title":"Another task",...}}
 #4. Get tasks
 GET /api/tasks
          -Response:[{"id":1,"title":"New task",...},{"id":2,"title":"Another task",...}]
